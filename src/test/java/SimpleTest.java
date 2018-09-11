@@ -2,6 +2,7 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -36,6 +37,7 @@ public class SimpleTest {
                 header("Content-Length",equalTo("4551"));
     }
 
+    @Ignore
     @Test
     public void test_Md5CheckSumForTest_ShouldBe098f6bcd4621d373cade4e832627b4f6() {
 
