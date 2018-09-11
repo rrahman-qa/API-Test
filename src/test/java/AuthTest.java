@@ -1,8 +1,10 @@
 import io.restassured.RestAssured;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class AuthTest {
 
+    @Ignore
     @Test
     public void basic_auth() {
         RestAssured.baseURI = "http://192.168.99.100";
