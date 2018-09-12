@@ -34,7 +34,8 @@ public class SimpleTest {
                 and().
                 contentType(ContentType.JSON).
                 and().
-                header("Content-Length",equalTo("4551"));
+                //header("Content-Length",equalTo("4551"));
+                header("Content-Length",equalTo("4552"));
     }
 
     @Ignore

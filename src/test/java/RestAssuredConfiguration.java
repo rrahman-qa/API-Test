@@ -15,7 +15,7 @@ public class RestAssuredConfiguration {
     public Response getResponse(RequestSpecification requestSpecification, String endPoint, int status){
         Response response = requestSpecification.get(endPoint);
         Assert.assertEquals(response.getStatusCode(), status);
-        response.then().log().all();
+        //response.then().log().all();
         return response;
     }
 }
